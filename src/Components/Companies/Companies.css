@@ -1,0 +1,10 @@
+.c-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.c-container>img{
+    width: 150px;
+}

@@ -1,0 +1,121 @@
+.v-container{
+    display: flex;
+}
+
+.v-left{
+    flex: 1;
+}
+
+.v-right{
+    flex: 1;
+}
+
+.v-right>span:nth-child(1){
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.v-right>span:nth-child(3){
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.v-right>span:nth-child(5){
+    color: rgba(140,139, 139);
+    font-size: 0.9rem;
+}
+
+.value-heading{
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.accordion{
+    margin-top: 2rem;
+    border: none;
+}
+
+.accordionItem.expanded{
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+}
+
+.accordionItem{
+    background-color: white;
+    border: 0.8px solid rgba(128, 128, 128, 0.143);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.accordionButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: rgb(213, 213, 213);
+    padding: 1rem;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    /* border: 1px solid rgba(140,139, 139); */
+    border-radius: 4px;
+    color: rgb(8, 106, 205);
+    background-color: white;
+}
+
+@media only screen and (max-width: 1064px){
+    .value-heading {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .v-right>span:nth-child(3) {
+        font-size: 1.1rem;
+    }
+
+    .secondary {
+        font-size: 0.9rem !important;
+    }
+
+    .v-right>span:nth-child(5) {
+        font-size: 0.8rem;
+    }
+
+    .v-left .image-container {
+        width: auto;
+        height: 29rem;
+        border-radius: 0;
+        border: 2px solid gray;
+    }
+
+    .v-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .v-right {
+        text-align: center;
+    }
+
+    .v-right>span:nth-child(1) {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 448px){
+    .v-left .image-container {
+        width: auto;
+        height: 20rem;
+    }
+}

@@ -1,0 +1,116 @@
+.r-head{
+    margin-block-end: 3rem;
+    margin-block-start: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head{
+    margin-block-end: 3rem;
+    margin-block-start: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.head>span:nth-child(1){
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.head>span:nth-child(2){
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1f3e72;
+}
+
+.r-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s ease;
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.r-card:hover{
+    scale: 1.025;
+    cursor: pointer;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(136, 160, 255, 0.46) 217.91%
+    );
+
+    box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+    border-radius: 10px;
+}
+
+.r-card>img {
+    width: 100%;
+}
+
+.r-card>span:nth-child(2)::before{
+    content: "$";
+    color: orange;
+    /* font-weight: 600; */
+    font-size: 1rem;
+}
+
+.r-card>span:nth-child(3){
+    color: #1f3e72;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.r-card>span:nth-child(4){
+    color: rgba(140,139, 139);
+  font-size: 0.9rem;
+}
+
+.prev-next>button{
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: orange;
+}
+
+
+.prev-next {
+    display: flex;
+    position: absolute;
+    gap: 1rem;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+@media only screen and (max-width: 1096px){
+    .r-head {
+        margin-block-end: 0rem;
+        margin-block-start: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .head>span:nth-child(2) {
+        font-size: 1.6rem;
+    }
+
+    .r-card {
+        width: 250px;
+    }
+
+    .r-card>span:nth-child(3) {
+        font-size: 1rem;
+    }
+}

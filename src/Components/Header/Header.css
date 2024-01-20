@@ -1,0 +1,64 @@
+.h-wrapper{
+    background-color: var(--black);
+    color: white;
+}
+
+.h-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.h-menu{
+    gap: 2rem;
+}
+
+.h-menu>*:hover{
+    cursor: pointer;
+}
+
+.bars{
+    display: none;
+}
+
+@media only screen and (max-width: 774px){
+    .h-menu {
+        gap: 2rem;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.095);
+        padding: 20px;
+        border-radius: 10px;
+        transition: all .4s ease-in;
+        transform: scale(0);
+        backdrop-filter: blur(8px);
+    }
+
+    .bars{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        transition: all .4s ease-in-out;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bar{
+        display: flex;
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        flex-direction: column;
+        margin-block-end: 0.4rem;
+    }
+
+    .display-flex{
+        transform: scale(1);
+    }
+}
